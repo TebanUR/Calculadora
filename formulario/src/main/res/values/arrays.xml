@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Ciudades">
+        <item>Medellín</item>
+        <item>Bogotá</item>
+        <item>Cali</item>
+        <item>Barranquilla</item>
+        <item>Santa Marta</item>
+        <item>Cartagena</item>
+        <item>Cúcuta</item>
+    </string-array>
+</resources>

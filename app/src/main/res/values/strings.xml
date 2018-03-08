@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="Cuadro">Cuadro</string>
+    <string name="Circulo">Circulo</string>
+    <string name="Cubo">Cubo</string>
+    <string name="Triangulo">Triangulo</string>
+    <string name="Lado">Lado</string>
+    <string name="Radio">Ingrese Radio</string>
+    <string name="Calcular">Calcular</string>
+    <string name="ResultadoA">Solución:</string>
+    <string name="ResultadoP" />
+    <string name="C">C:</string>
+    <string name="B">B:</string>
+    <string name="A">Ingrese A:</string>
+</resources>

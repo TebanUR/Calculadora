@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
+    android:orientation="vertical"
+    tools:context="com.tebanur.calculadora.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="¿Qué deseas calcular?"
+        android:textColor="@color/mediumaquamarine"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RadioGroup
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rCuadro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/Cuadro"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <RadioButton
+                android:id="@+id/rCirculo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/Circulo"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <RadioButton
+                android:id="@+id/rCubo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/Cubo"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <RadioButton
+                android:id="@+id/rTriangulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/Triangulo"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tCuadro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/Lado"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/eCuadro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tCirculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/Radio"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/eCirculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tCubo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/Lado"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/eCubo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:visibility="gone" />
+
+        <TextView
+        android:id="@+id/tTrianguloA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/A"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/eTrianguloA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tTrianguloB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/B"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/eTrianguloB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tTrianguloC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/C"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/eTrianguloC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tResultadoA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:text="@string/ResultadoA"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <Button
+
+            android:id="@+id/bCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/mediumaquamarine"
+            android:onClick="onButtonClicked"
+            android:text="@string/Calcular"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

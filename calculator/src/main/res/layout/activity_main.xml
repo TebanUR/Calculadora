@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greenboard"
+    android:orientation="vertical"
+    tools:context="com.tebanur.calculator.MainActivity">
+
+    <TextView
+        android:gravity="right"
+        android:id="@+id/operaciones"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/Resultado"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/BSiete"
+            android:layout_width="100dp"
+            android:onClick="onButtonClicked"
+            android:layout_height="100dp"
+            android:layout_marginLeft="3dp"
+            android:background="#11000000"
+            android:text="@string/siete"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/BOcho"
+            android:layout_width="100dp"
+            android:onClick="onButtonClicked"
+            android:layout_height="100dp"
+            android:background="#10000000"
+            android:text="@string/ocho"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/BNueve"
+            android:layout_width="100dp"
+            android:onClick="onButtonClicked"
+            android:layout_height="100dp"
+            android:background="#10000000"
+            android:text="@string/nueve"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/BMas"
+            android:layout_width="100dp"
+            android:onClick="onButtonClicked"
+            android:layout_height="100dp"
+            android:background="#10000000"
+            android:text="@string/mas"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/BCuatro"
+            android:layout_width="100dp"
+            android:onClick="onButtonClicked"
+            android:layout_height="100dp"
+            android:layout_marginLeft="3dp"
+            android:background="#10000000"
+            android:text="@string/cuatro"
+            android:textSize="40dp" />
+        />
+
+        <Button
+            android:id="@+id/BCinco"
+            android:layout_width="100dp"
+            android:onClick="onButtonClicked"
+            android:layout_height="100dp"
+            android:background="#10000000"
+            android:text="@string/cinco"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/BSeis"
+            android:layout_width="100dp"
+            android:onClick="onButtonClicked"
+            android:layout_height="100dp"
+            android:background="#10000000"
+            android:text="@string/seis"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/BResta"
+            android:layout_width="100dp"
+            android:onClick="onButtonClicked"
+            android:layout_height="100dp"
+            android:background="#10000000"
+            android:text="@string/menos"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/BUno"
+            android:layout_width="100dp"
+            android:onClick="onButtonClicked"
+            android:layout_height="100dp"
+            android:layout_marginLeft="3dp"
+            android:background="#10000000"
+            android:text="@string/uno"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/BDos"
+            android:layout_width="100dp"
+            android:onClick="onButtonClicked"
+            android:layout_height="100dp"
+            android:background="#10000000"
+            android:text="@string/dos"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/BTres"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#10000000"
+            android:onClick="onButtonClicked"
+            android:text="@string/tres"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/BMultiplicacion"
+            android:layout_width="100dp"
+            android:onClick="onButtonClicked"
+            android:layout_height="100dp"
+            android:background="#10000000"
+            android:text="@string/multiplicacion"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/BPunto"
+            android:layout_width="100dp"
+            android:onClick="onButtonClicked"
+            android:layout_height="100dp"
+            android:layout_marginLeft="3dp"
+            android:background="#10000000"
+            android:text="@string/punto"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/BCero"
+            android:layout_width="100dp"
+            android:onClick="onButtonClicked"
+            android:layout_height="100dp"
+            android:background="#10000000"
+            android:text="@string/cero"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/BIgual"
+            android:layout_width="100dp"
+            android:onClick="onButtonClicked"
+            android:layout_height="100dp"
+            android:background="#10000000"
+            android:text="@string/igual"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/BDivision"
+            android:layout_width="100dp"
+            android:onClick="onButtonClicked"
+            android:layout_height="100dp"
+            android:background="#10000000"
+            android:text="@string/division"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/BReiniciar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#11000000"
+        android:onClick="onButtonClicked"
+        android:text="@string/Reiniciar"
+        android:textSize="40dp" />
+
+
+</LinearLayout>
